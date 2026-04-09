@@ -30,3 +30,13 @@ print("Actual:", y_test.values[:5])
 # Accuracy metric
 mae = mean_absolute_error(y_test, predictions)
 print("Mean Absolute Error:", mae)
+
+import matplotlib.pyplot as plt
+
+plt.scatter(y_test, predictions)
+plt.xlabel("Actual Grades")
+plt.ylabel("Predicted Grades")
+plt.title("Actual vs Predicted Grades")
+
+plt.plot([0, 20], [0, 20], color='red')  # perfect prediction line
+plt.show()

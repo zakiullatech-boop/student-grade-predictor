@@ -47,3 +47,9 @@ The model was trained using Linear Regression.
 - Mean Absolute Error: ~1.25
 
 This means the model predicts final grades within approximately ±1.25 points on average.
+
+## Visualization
+
+The scatter plot shows predicted vs actual grades.
+
+Points close to the red line indicate accurate predictions.
