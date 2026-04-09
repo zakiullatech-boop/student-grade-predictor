@@ -18,7 +18,7 @@ model = LinearRegression()
 # Train model
 model.fit(X_train, y_train)
 
-from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_absolute_error, r2_score
 
 # Predict
 predictions = model.predict(X_test)
@@ -29,7 +29,10 @@ print("Actual:", y_test.values[:5])
 
 # Accuracy metric
 mae = mean_absolute_error(y_test, predictions)
+r2 = r2_score(y_test, predictions)
+
 print("Mean Absolute Error:", mae)
+print("R2 Score:", r2)
 
 import matplotlib.pyplot as plt
 
