@@ -53,3 +53,13 @@ This means the model predicts final grades within approximately ±1.25 points on
 The scatter plot shows predicted vs actual grades.
 
 Points close to the red line indicate accurate predictions.
+
+## Model Saving
+
+The trained model is saved as `model.pkl` and can be reused without retraining.
+
+Example input:
+- studytime
+- failures
+- absences
+- G1, G2

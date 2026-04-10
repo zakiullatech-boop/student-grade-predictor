@@ -43,3 +43,19 @@ plt.title("Actual vs Predicted Grades")
 
 plt.plot([0, 20], [0, 20], color='red')  # perfect prediction line
 plt.show()
+
+import joblib
+
+# Save model
+joblib.dump(model, "model.pkl")
+print("Model saved!")
+
+
+# Load model
+loaded_model = joblib.load("model.pkl")
+
+# Example prediction
+sample = [[2, 0, 4, 10, 11]]  # studytime, failures, absences, G1, G2
+prediction = loaded_model.predict(sample)
+
+print("Sample prediction:", prediction)
