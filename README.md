@@ -63,3 +63,11 @@ Example input:
 - failures
 - absences
 - G1, G2
+
+## Model Comparison
+
+Two models were tested:
+- Linear Regression
+- Decision Tree
+
+The best model is selected based on lowest error (MAE).
